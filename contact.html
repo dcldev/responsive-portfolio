@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet"  href="css/responsivestyle.css">    
+    
+    <title>Danny Lee - Fullstack Developer</title>
+
+</head>
+
+<body>
+    <aside>
+        <figure>
+            <img src="images/big-logo.svg" class ="big-logo">
+           
+            <div id="maincap">
+                <figcaption>DANNY LEE</figcaption>
+            </div>
+            <div id="secondcap">
+                <figcaption>D.L</figcaption>
+            </div>
+        </figure>
+
+        <img src="images/small-logo.svg" class="small-logo">
+        <img src="images/small-menu.svg" class="smallmenu">
+        
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="#">ABOUT ME</a></li>
+                <li><a href="portfolio.html">PORTFOLIO</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+        
+
+    </aside>
+    <main>
+    <div class="container">
+        <form action="#">
+            <div class="formrow">
+                <div class="col-75">
+                <input type="text" id="fname" name="firstname" placeholder="FIRST NAME">
+                </div>
+            </div>
+            <div class="formrow">
+                <div class="col-75">
+                <input type="text" id="lname" name="lastname" placeholder="LAST NAME">
+                </div>
+            </div>
+            <div class="formrow">
+                <div class="col-75">
+                <textarea id="subject" name="subject" placeholder="SUBJECT" style="height:200px"></textarea>
+                </div>
+            </div>
+            <div class="formrow">
+                <input type="submit" value="SUBMIT">
+            </div>
+        </form>
+    </div>
+
+        <img src="images/off-white-tag-nav-ziptie-v2.svg" class="ziptie">
+        
+    </main>
+
+ 
+    <script>
+        
+        (function() {
+            var menu = document.querySelector('ul'),
+                menulink = document.querySelector('.smallmenu');
+
+            menulink.addEventListener('click', function(e) {
+                menu.classList.toggle('active');
+                e.preventDefault();
+            });
+        })();
+
+    </script>
+</body>
+
+
+
+</html>

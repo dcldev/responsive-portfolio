@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet"  href="css/responsivestyle.css">    
+    
+    <title>Danny Lee - Fullstack Developer</title>
+
+</head>
+
+<body>
+    <aside>
+        <figure>
+            <img src="images/big-logo.svg" class ="big-logo">
+           
+            <div id="maincap">
+                <figcaption>DANNY LEE</figcaption>
+            </div>
+            <div id="secondcap">
+                <figcaption>D.L</figcaption>
+            </div>
+        </figure>
+
+        <img src="images/small-logo.svg" class="small-logo">
+        <img src="images/small-menu.svg" class="smallmenu">
+        
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="#">ABOUT ME</a></li>
+                <li><a href="portfolio.html">PORTFOLIO</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+        
+
+    </aside>
+    <main>
+        <p>
+            FullStack Developer for "HIRE"<br>
+            "DANNY LEE CREATIVE PANTOLOGIST"<br>
+            Brooklyn, New York USA<br>
+            c. 2019
+        </p>
+        
+        <img src="images/off-white-tag-nav-ziptie-v2.svg" class="ziptie">
+        
+    </main>
+
+ 
+    <script>
+        
+        (function() {
+            var menu = document.querySelector('ul'),
+                menulink = document.querySelector('.smallmenu');
+
+            menulink.addEventListener('click', function(e) {
+                menu.classList.toggle('active');
+                e.preventDefault();
+            });
+        })();
+
+    </script>
+</body>
+
+
+
+</html>

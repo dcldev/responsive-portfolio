@@ -1,0 +1,330 @@
+body, html {
+    background-color:#8AD4FC;;
+    height: calc(100% - 2em);
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+aside {
+    color: #FE802A;
+    font-weight: bold;
+    display: grid;
+    grid-template-columns: auto 40px;
+    padding: 2em;
+}
+
+figure {
+    margin: 0;
+}
+
+#maincap {
+    font-size: 1.0em;
+    font-style: bold;
+    margin: 5em auto;
+    left: 5%;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: red;
+}
+
+/* Small-Logo With Caption */
+
+#secondcap {
+    font-size: 1.8em;
+    font-style: bold;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    top: 23px;
+    -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: red;
+}
+
+.small-logo {
+    position: absolute;
+    left: 43%;
+    margin: 0;
+    padding: 0;
+    top: 20px;
+}
+
+/* Navigation CSS Begins */
+
+nav {
+    background: white;
+}
+
+.active {
+    position: absolute;
+    display: block;
+    background: white;
+    width: 50%;
+    left: 0;
+    top: 0;
+    height: 100%;
+}
+
+ul {
+    display: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul li a{
+    background: white;
+    text-decoration: none;
+    font-size: .8em;
+    font-style: bold;
+    display: block;
+    padding: 1.5em 3em;
+    color: black;
+}
+
+/* Navigations CSS Ends */
+
+main {
+    background: #F0EDEC;
+    padding: 1em 1.4em;
+}
+
+p {
+    font-size: 1.1em;
+    font-style: bold;
+    line-height: 1.5em;
+    color: #FE802A;
+    margin: 7.5em auto;
+}
+
+/* Gallery CSS Begins */
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    flex: 25%;
+    max-width: 50%;
+    margin-top: .5em;
+  }
+  
+  .column img {
+    vertical-align: middle;
+  }
+
+/* Form CSS Begins */
+
+    input[type=text], select, textarea{
+    color: black;
+    width: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+    resize: vertical;
+    border: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    }
+
+
+
+    input[type=submit] {
+    background-color: #FE802A;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: bold;
+    }
+
+
+    .container {
+    text-align: center;
+    padding: 1.25em;
+    margin: 7em auto 0em auto;
+    }
+
+
+    .col-75 {
+    display: inline-block;
+    width: 75%;
+    margin-top: 1em;
+    }
+
+    .formrow {
+    text-align: center;
+    }
+
+
+    .formrow:after {
+    content: "";
+    display: table;
+    clear: both;
+    }
+
+/* Media Query for Minimum Screen Size Begins */
+
+@media only screen and (min-width: 768px) {
+
+    body {
+        background: white;
+        display: grid;
+        grid-template-columns: 20% auto;
+        padding: 2em;
+    }
+
+    .small-logo {
+        display: none;
+    }
+
+    aside {
+        background: #8AD4FC;
+        grid-template-columns: auto;
+        grid-template-rows: 20% auto;
+        padding: 0;
+    }
+
+    .big-logo {
+        display: block;
+        width: 50%;
+        margin: 2.5em auto 1em auto;
+        height: auto;
+    }
+
+/* NAV Media Query for Min Screen Size Begins */
+
+    .smallmenu {
+        display: none;
+    }
+
+    #maincap {
+        text-align: center;
+        color: #FE802A;
+        font-size: 2em;
+        margin: 1em auto;
+    }
+
+    #secondcap {
+        display: none;
+    }
+
+    ul {
+        display: block;
+        margin-top: 6em;
+        position: relative !important;
+        background: none !important;
+        width: 100% !important;
+    }
+
+    ul li a:hover {
+        background-color: #F0EDEC;
+    }
+
+    nav {
+        background: none;
+    }
+
+/* NAV Media Query for Min Screen Size Ends */
+
+    p {
+        font-size: 2em;
+        font-weight: bold;
+        color: #FE802A;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: red;
+    }
+
+    .ziptie {
+        position: fixed;
+        width: 25%;
+        right: 22px;
+        bottom: 28px;
+    }
+
+    .smallmenu {
+        width: 40px;
+        cursor: pointer;
+    }
+    .column {
+        margin: 0;
+        flex: 50%;
+        max-width: 50%;
+      }
+    
+}
+
+/* Media Query for Max Screen Size Begins */
+
+@media only screen and (max-width: 768px) {
+    
+    main {
+        height: calc(100% - 1em);
+    }
+    
+    .big-logo {
+        display: none;
+    }
+
+    #maincap {
+        display: none;
+    }
+
+    #content {
+        font-size: 1em;
+        margin: 2em .1em;
+        color: #FE802A;
+        font-weight: bold;
+    }
+
+    .ziptie {
+        position: fixed;
+        width: 25%;
+        right: 0;
+        bottom: 0;
+    }
+    
+    p {
+        font-size: 2em;
+        font-weight: bold;
+        margin: 1em auto;
+        color: #FE802A;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: red;
+    }
+
+    /* FORM @MEDIA CODE */
+
+    .container {
+        text-align: center;
+        padding: 1.25em;
+        margin: 1em auto 0em auto;
+      }
+
+    .col-75, input[type=submit] {
+        width: 100%;
+        margin: .5em auto;
+        padding: 0;
+      }
+      
+    input[type=submit] {
+        background-color: #FE802A;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        cursor: pointer;
+        display: inline-block;
+      }
+
+    .column {
+        margin: 0;
+        flex: wrap;
+        flex: 100%;
+        max-width: 100%;
+        }
+    
+        
+    
+    }
