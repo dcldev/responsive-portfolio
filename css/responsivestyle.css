@@ -36,7 +36,7 @@ figure {
     padding: 0;
     top: 23px;
     -webkit-text-stroke-width: 1px;
-        -webkit-text-stroke-color: red;
+    -webkit-text-stroke-color: red;
 }
 
 .small-logo {
@@ -92,7 +92,7 @@ p {
     font-style: bold;
     line-height: 1.5em;
     color: #FE802A;
-    margin: 7.5em auto;
+    margin: 7em auto 0em auto;
 }
 
 /* Gallery CSS Begins */
